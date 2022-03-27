@@ -1,4 +1,4 @@
-package excal.time;
+package com.damonyuan.excal.time;
 
 /**
  * Business Day conventions

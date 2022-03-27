@@ -1,6 +1,6 @@
-package excal.time;
+package com.damonyuan.excal.time;
 
-import excal.common.ExcalException;
+import com.damonyuan.excal.common.ExcalException;
 
 /**
  * Day's serial number MOD 7
