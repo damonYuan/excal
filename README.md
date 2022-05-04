@@ -1,7 +1,7 @@
 README
 ====
 
-Excal - an exchange data based trading calendar.
+tcal - Trading Calendar.
 
 ## Background
 
