@@ -1,6 +1,6 @@
-package com.damonyuan.excal;
+package com.damonyuan.tcal;
 
-public class Excal {
+public class tcal {
     public boolean someLibraryMethod() {
         return true;
     }

@@ -1,15 +1,14 @@
-package com.damonyuan.excal.time;
+package com.damonyuan.tcal.time;
 
 /**
  * Time units
- *
  */
 public enum TimeUnit {
     Days, Weeks, Months, Years;
 
     /**
      * Returns the name of time unit in long format (e.g. "week")
-     * 
+     *
      * @return the name of time unit in long format (e.g. "week")
      */
     public String getLongFormat() {
@@ -18,7 +17,7 @@ public enum TimeUnit {
 
     /**
      * Returns the name of time unit in short format (e.g. "w")
-     * 
+     *
      * @return the name of time unit in short format (e.g. "w")
      */
     public String getShortFormat() {
@@ -27,7 +26,7 @@ public enum TimeUnit {
 
     /**
      * Output time units in long format (e.g. "week")
-     * 
+     *
      * @note message in singular form
      */
     private String getLongFormatString() {

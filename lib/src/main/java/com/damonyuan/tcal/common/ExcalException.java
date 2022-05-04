@@ -1,4 +1,4 @@
-package com.damonyuan.excal.common;
+package com.damonyuan.tcal.common;
 
 import com.sun.org.slf4j.internal.Logger;
 import com.sun.org.slf4j.internal.LoggerFactory;
@@ -13,7 +13,7 @@ import java.io.PrintWriter;
  */
 public class ExcalException extends RuntimeException {
 
-    private static Logger logger = LoggerFactory.getLogger(ExcalException.class);
+    private static final Logger logger = LoggerFactory.getLogger(ExcalException.class);
 
     /**
      * Constructs a new runtime exception with null as its detail message.
@@ -36,6 +36,7 @@ public class ExcalException extends RuntimeException {
 
     /**
      * Constructs a new runtime exception with the specified detail message and cause.
+     *
      * @param message
      * @param cause
      */
