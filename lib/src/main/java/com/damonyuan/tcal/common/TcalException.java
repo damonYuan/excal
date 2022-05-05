@@ -1,24 +1,20 @@
 package com.damonyuan.tcal.common;
 
-import com.sun.org.slf4j.internal.Logger;
-import com.sun.org.slf4j.internal.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.PrintStream;
 import java.io.PrintWriter;
 
-/**
- * A specialized RuntimeException used internally by JQuantLib
- *
- * @author Richard Gomes
- */
-public class ExcalException extends RuntimeException {
 
-    private static final Logger logger = LoggerFactory.getLogger(ExcalException.class);
+public class TcalException extends RuntimeException {
+
+    private static final Logger logger = LoggerFactory.getLogger(TcalException.class);
 
     /**
      * Constructs a new runtime exception with null as its detail message.
      */
-    public ExcalException() {
+    public TcalException() {
         super("LibraryException created");
         logger.error(this.toString());
     }
@@ -28,7 +24,7 @@ public class ExcalException extends RuntimeException {
      *
      * @param message
      */
-    public ExcalException(final String message) {
+    public TcalException(final String message) {
         super(message);
         logger.error(this.toString());
     }
@@ -40,7 +36,7 @@ public class ExcalException extends RuntimeException {
      * @param message
      * @param cause
      */
-    public ExcalException(final String message, final Throwable cause) {
+    public TcalException(final String message, final Throwable cause) {
         super(message, cause);
         logger.error(this.toString());
     }
@@ -52,7 +48,7 @@ public class ExcalException extends RuntimeException {
      *
      * @param cause
      */
-    public ExcalException(final Throwable cause) {
+    public TcalException(final Throwable cause) {
         super(cause);
         logger.error(this.toString());
     }

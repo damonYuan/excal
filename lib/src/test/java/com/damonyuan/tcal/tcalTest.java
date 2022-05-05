@@ -8,7 +8,6 @@ import static org.junit.Assert.*;
 
 public class tcalTest {
     @Test public void someLibraryMethodReturnsTrue() {
-        tcal classUnderTest = new tcal();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+        assertEquals("1.0.0", Tcal.getVersion());
     }
 }

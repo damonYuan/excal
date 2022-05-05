@@ -1,13 +1,12 @@
 package com.damonyuan.tcal.time;
 
-import com.damonyuan.tcal.common.ExcalException;
+import com.damonyuan.tcal.common.TcalException;
 
 /**
  * Day's serial number MOD 7
  * <p>
  * WEEKDAY Excel function is the same except for Sunday = 7.
  *
- * @author Richard Gomes
  */
 public enum Weekday {
     Sunday(1), Monday(2), Tuesday(3), Wednesday(4), Thursday(5), Friday(6), Saturday(7);
@@ -41,7 +40,7 @@ public enum Weekday {
             case 7:
                 return Weekday.Saturday;
             default:
-                throw new ExcalException("value must be [1,7]"); // TODO: message
+                throw new TcalException("value must be [1,7]");
         }
     }
 
@@ -78,7 +77,7 @@ public enum Weekday {
             case 7:
                 return "Saturday";
         }
-        throw new ExcalException("value must be [1,7]"); // TODO: message
+        throw new TcalException("value must be [1,7]");
     }
 
     /**
@@ -127,6 +126,5 @@ public enum Weekday {
         sb.append(this);
         sb.setLength(2);
         return sb.toString();
-
     }
 }

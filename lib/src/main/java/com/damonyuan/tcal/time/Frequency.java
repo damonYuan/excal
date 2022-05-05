@@ -1,11 +1,10 @@
 package com.damonyuan.tcal.time;
 
-import com.damonyuan.tcal.common.ExcalException;
+import com.damonyuan.tcal.common.TcalException;
 
 /**
  * Frequency of events
  *
- * @author Richard Gomes
  */
 public enum Frequency {
     /**
@@ -96,7 +95,7 @@ public enum Frequency {
             case 999:
                 return Frequency.OtherFrequency;
             default:
-                throw new ExcalException("value must be one of -1,0,1,2,3,4,6,12,13,26,52,365,999");
+                throw new TcalException("value must be one of -1,0,1,2,3,4,6,12,13,26,52,365,999");
         }
     }
 
