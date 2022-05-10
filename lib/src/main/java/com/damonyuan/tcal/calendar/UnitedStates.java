@@ -1,4 +1,4 @@
-package com.damonyuan.tcal.calendars;
+package com.damonyuan.tcal.calendar;
 
 import com.damonyuan.tcal.common.TcalException;
 import com.damonyuan.tcal.time.Calendar;
