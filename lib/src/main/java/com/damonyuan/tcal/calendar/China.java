@@ -1,5 +1,6 @@
 package com.damonyuan.tcal.calendar;
 
+import com.damonyuan.tcal.common.Holidays;
 import com.damonyuan.tcal.common.TcalException;
 import com.damonyuan.tcal.time.Calendar;
 import com.damonyuan.tcal.time.Date;
@@ -15,7 +16,6 @@ import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.HashMap;
 
-import static com.damonyuan.tcal.time.Month.*;
 import static com.damonyuan.tcal.time.Weekday.Saturday;
 import static com.damonyuan.tcal.time.Weekday.Sunday;
 
